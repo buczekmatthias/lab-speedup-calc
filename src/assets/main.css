@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-stone-900 text-slate-50;
+}
+
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  @apply flex flex-col gap-6 mx-auto max-w-4xl py-4 px-2;
+}
+
+table {
+  @apply border-collapse;
+}
+
+th,
+td {
+  @apply border border-slate-300/30 p-2.5 text-center;
+}
+
+input {
+  @apply [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none cursor-text !outline-none !ring-0 border border-solid border-slate-300/30 rounded-md p-3;
+}
+
+@layer components {
+  .link {
+    @apply hover:underline underline-offset-4 text-sky-400;
+  }
+
+  .page-header {
+    @apply text-2xl font-semibold;
+  }
+}
