@@ -1,5 +1,5 @@
 <template>
-  <EndOfService /
+  <EndOfService />
   <StandardSetups />
   <div class="lg:grid lg:grid-cols-2 max-lg:flex max-lg:flex-col gap-4 w-full self-center">
     <SpeedUpSelectors v-model="speedUpSetup" />
