@@ -1,4 +1,5 @@
 <template>
+  <EndOfService /
   <StandardSetups />
   <div class="lg:grid lg:grid-cols-2 max-lg:flex max-lg:flex-col gap-4 w-full self-center">
     <SpeedUpSelectors v-model="speedUpSetup" />
@@ -27,6 +28,7 @@ import TillEndCalc from "@/components/TillEndCalc.vue";
 import StandardSetups from "@/components/StandardSetups.vue";
 import IncreaseTable from "@/components/IncreaseTable.vue";
 import BoostCostTable from "@/components/BoostCostTable.vue";
+import EndOfService from "@/components/EndOfService.vue";
 
 const speedUpSetup = ref(JSON.parse(localStorage.getItem("setup")));
 
